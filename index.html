@@ -3,43 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Joann Joseph's Profile</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f4f7fc;
             margin: 0;
             padding: 0;
-            text-align: center;
             color: #333;
         }
+
         .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .profile-header {
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
             font-size: 2.5em;
-            margin-top: 50px;
+            margin: 0;
         }
+
         .emoji {
             font-size: 1.5em;
+            color: #ff5c8d;
         }
+
+        /* About Section */
         .about {
-            margin-top: 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        /* Education Section */
+        .education, .achievements, .special-talents {
+            margin-bottom: 25px;
+        }
+
+        .education h2, .achievements h2, .special-talents h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #3a3a3a;
+        }
+
+        .education p, .achievements p, .special-talents p {
             font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: #ff5c8d;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="profile-header">
-            <p>Your Name <span class="emoji">😊</span></p>
+        <!-- Profile Header -->
+        <div class="header">
+            <h1>Joann Joseph <span class="emoji">😊</span></h1>
         </div>
+
+        <!-- About Me Section -->
         <div class="about">
-            <p>Welcome to my profile page! I'm excited to share a little bit about myself.</p>
+            <p>Hello! I'm Joann Joseph, a passionate student at Ramaiah Institute of Technology, currently in my 3rd year pursuing a degree in Computer Science Engineering (CSE). Welcome to my profile!</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>Ramaiah Institute of Technology</strong> | 3rd Year CSE</p>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <p>Won multiple dance competitions and performed at various events!</p>
+        </div>
+
+        <!-- Special Talents Section -->
+        <div class="special-talents">
+            <h2>Special Talents</h2>
+            <p>I can spell the word "extraordinary" incredibly fast!</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>Want to get in touch? Check out my <a href="#">social media</a>!</p>
         </div>
     </div>
 
